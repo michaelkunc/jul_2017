@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A061D379-68B5-1043-7070-8796C84FCA33" schemaObject="F3E76D01-1F01-63AE-7F44-61B13E44E61E" name="products_prices">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>electronics</sourceObjSchema>
+<sourceObjName>products_prices</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="price_list_id" id="31069A12-A3B8-BE63-1100-56420B29A0D1">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>products_prices</sourceObjSchema>
+<sourceObjName>price_list_id</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="product_id" id="1AB1BB2F-7F1F-99B3-D481-2F41BD8143EF">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>products_prices</sourceObjSchema>
+<sourceObjName>product_id</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="list_price" id="A9D5C2BA-DBC9-AA29-C50E-55D4E2E2FDFD">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>products_prices</sourceObjSchema>
+<sourceObjName>list_price</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_date" id="86672C2B-7BCE-5006-98F5-146D60A37074">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>products_prices</sourceObjSchema>
+<sourceObjName>created_date</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

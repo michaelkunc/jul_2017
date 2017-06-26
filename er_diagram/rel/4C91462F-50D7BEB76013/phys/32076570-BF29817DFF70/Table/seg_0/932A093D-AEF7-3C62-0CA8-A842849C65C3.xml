@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="product_costs" directorySegmentName="seg_0" id="932A093D-AEF7-3C62-0CA8-A842849C65C3">
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<schemaObject>F3E76D01-1F01-63AE-7F44-61B13E44E61E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="labor_cost" id="2FAD8C86-93CD-D841-2ADD-96A1D9E8A4DD">
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="product_id" id="743592F3-355E-18FC-AD77-D9665C2B5085">
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="mtl_cost" id="85592549-899C-DEEB-C68C-C419E5FD905B">
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="created_date" id="ACD0A70E-F34F-319F-68A8-B33440FF0EEB">
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="burden_cost" id="C0E0ED0D-6AEF-76ED-F973-057EEDF932B0">
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cost_id" id="C6812FD5-97FA-385D-B6B5-A86063DA3170">
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRIMARY" id="81541CD0-B55A-3DC4-A362-2BF053F4EE84">
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

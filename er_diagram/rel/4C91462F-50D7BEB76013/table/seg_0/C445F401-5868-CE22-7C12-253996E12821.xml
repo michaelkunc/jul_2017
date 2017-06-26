@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C445F401-5868-CE22-7C12-253996E12821" schemaObject="F3E76D01-1F01-63AE-7F44-61B13E44E61E" name="countries">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>electronics</sourceObjSchema>
+<sourceObjName>countries</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="country_id" id="B584523F-0AB0-EDDA-78A9-79B950D9CA9E">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>countries</sourceObjSchema>
+<sourceObjName>country_id</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="33AA73B9-736F-1F74-2174-FE310DA42460">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>countries</sourceObjSchema>
+<sourceObjName>name</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_date" id="98F57CF1-A031-9E60-14A1-19D69B5D23A8">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>countries</sourceObjSchema>
+<sourceObjName>created_date</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_updated_date" id="1271E9F0-4972-D76D-5B09-F95439D21779">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>countries</sourceObjSchema>
+<sourceObjName>last_updated_date</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D0C85717-9E3D-2D97-083A-80478376F6BC" name="PRIMARY">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>electronics</sourceObjSchema>
+<sourceObjName>PRIMARY</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B584523F-0AB0-EDDA-78A9-79B950D9CA9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

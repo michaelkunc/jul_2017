@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5C025A48-BD89-4964-617C-8C26CFC6A6E7" schemaObject="F3E76D01-1F01-63AE-7F44-61B13E44E61E" name="order_headers">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>electronics</sourceObjSchema>
+<sourceObjName>order_headers</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="header_id" id="54D651B7-7845-01A1-2527-488B887CE174">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>order_headers</sourceObjSchema>
+<sourceObjName>header_id</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="order_number" id="4BF577D9-5458-7533-BBF0-258F6E23A70B">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>order_headers</sourceObjSchema>
+<sourceObjName>order_number</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sold_to_id" id="C9D56544-B95D-D41D-53DA-C82A35FD70D1">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>order_headers</sourceObjSchema>
+<sourceObjName>sold_to_id</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ship_to_id" id="6B2652FD-7744-28B9-2D7A-597D239ADA2C">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>order_headers</sourceObjSchema>
+<sourceObjName>ship_to_id</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_date" id="B62A620A-89A3-A004-A2AF-2649D866710A">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>order_headers</sourceObjSchema>
+<sourceObjName>created_date</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_updated_date" id="42872DD6-0248-E77B-D193-392E9AD5CD45">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>order_headers</sourceObjSchema>
+<sourceObjName>last_updated_date</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<defaultValue>CURRENT_TIMESTAMP</defaultValue>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="po_id" id="D73FD73D-74F4-EDAE-2517-AF84E1617BDC">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>order_headers</sourceObjSchema>
+<sourceObjName>po_id</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="currency" id="27882657-ED24-AAE8-C073-920A3D6C5F28">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>order_headers</sourceObjSchema>
+<sourceObjName>currency</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="28DEE3D4-E82C-5288-9CC2-9814DB1835DB" name="PRIMARY">
+<sourceConnName>electronics</sourceConnName>
+<sourceObjSchema>electronics</sourceObjSchema>
+<sourceObjName>PRIMARY</sourceObjName>
+<createdBy>michaelkunc</createdBy>
+<createdTime>2017-06-26 20:14:43 UTC</createdTime>
+<ownerDesignName>er_diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54D651B7-7845-01A1-2527-488B887CE174"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
