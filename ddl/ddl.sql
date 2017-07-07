@@ -96,7 +96,7 @@ create table countries (
 drop table if exists products;
 
 create table products (
-  product_id int not null,
+  product_id int not null auto_increment,
   product_number varchar(100) not null,
   name varchar(500),
   description varchar(2000),
@@ -104,7 +104,7 @@ create table products (
   manufacturer_id int,
   family_id int references product_family(family_id),
   subfamily_id int references product_subfamily(subfamily_id),
-    created_date timestamp default current_timestamp,
+  created_date timestamp default current_timestamp,
   last_updated_date timestamp default current_timestamp,
   primary key (product_id)
 );
