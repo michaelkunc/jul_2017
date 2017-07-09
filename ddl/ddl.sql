@@ -113,7 +113,7 @@ create table products (
 drop table if exists product_subfamily;
 
 create table product_subfamily (
-  subfamily_id int not null,
+  subfamily_id int not null auto_increment,
   name varchar(500),
   family_id int references product_family(family_id),
   created_date timestamp default current_timestamp,
@@ -125,7 +125,7 @@ create table product_subfamily (
 drop table if exists product_family;
 
 create table product_family (
-  family_id int not null,
+  family_id int not null auto_increment,
   name varchar(500),
   created_date timestamp default current_timestamp,
   last_updated_date timestamp default current_timestamp,

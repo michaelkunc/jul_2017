@@ -8,6 +8,7 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+import random
 
 # note - API key stored as an environment variable.
 
@@ -62,15 +63,49 @@ session = Session()
 #     session.commit()
 #     session.close()
 
-import fake_products
+import fake_data
+from sqlalchemy.sql.expression import func
 
-for i in range(0, 10000):
-    fake = fake_products.FakeProduct()
-    data = Products(product_number=fake.part_number(),
-                    name=fake.name(),
-                    description=fake.description(),
-                    uom=fake.uom())
-    session.add(data)
-    session.commit()
 
-session.close()
+def populate_families():
+    for k, v in fake_data.ProductFamily.items():
+        data = Product_Family(family_id=k,
+                              name=v)
+        session.add(data)
+        session.commit()
+    session.close()
+
+
+def populate_subfamilies():
+    for i in fake_data.ProductSubFamily:
+        data = Product_Subfamily(name=i, family_id=random.choice(
+            list(fake_data.ProductFamily.keys())))
+        session.add(data)
+        session.commit()
+    session.close()
+
+
+def get_subfamily_id():
+    """Takes a SQLAlchemy class name as a parameter."""
+    row = session.query(Product_Subfamily).order_by(func.rand()).first()
+    return (row.subfamily_id, row.family_id)
+
+
+def populate_products(number):
+    for i in range(0, number):
+        fake = fake_data.Product()
+        subfamily = get_subfamily_id()
+        data = Products(product_number=fake.part_number(),
+                        name=fake.name(),
+                        description=fake.description(),
+                        uom=fake.uom(),
+                        subfamily_id=subfamily[0],
+                        family_id=subfamily[1])
+        session.add(data)
+        session.commit()
+
+    session.close()
+
+populate_families()
+populate_subfamilies()
+populate_products(2000)
