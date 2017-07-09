@@ -9,8 +9,12 @@ class ProductsTest(unittest.TestCase):
     def setUpClass(ProductsTest):
         ProductsTest.ins = fake_products.Product()
 
-    def test_is_this_thing_on(self):
-        self.assertEqual('BUTTS', ProductsTest.ins.part_number())
+    def test_part_number(self):
+        number_re = r'^[A-Z]{3}-[0-9]{8}$'
+        self.assertRegex(ProductsTest.ins.part_number(), number_re)
+
+    def test_part_name(self):
+        self.assertEqual('Beatrix Lestrange', ProductsTest.ins.name())
 
 
 if __name__ == '__main__':

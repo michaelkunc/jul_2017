@@ -47,17 +47,30 @@ engine = create_engine(
 Session = sessionmaker(bind=engine)
 session = Session()
 
-url = 'https://octopart.com/api/v3/parts/match?apikey={}&queries=[{{"brand":"Texas Instruments", "limit":20}}]&pretty_print=true&include[]=short_description&include[]=descriptions'.format(
-    os.environ['API_KEY'])
-r = requests.get(url)
-data = r.json()
+# url = 'https://octopart.com/api/v3/parts/match?apikey={}&queries=[{{"mpn":"SN7*", "limit":20}}]&pretty_print=true&include[]=short_description&include[]=descriptions'.format(
+#     os.environ['API_KEY'])
+# r = requests.get(url)
+# data = r.json()
 
 
-for item in data['results'][0]['items']:
-    product = Products(product_number=item['mpn'],
-                       name=item['brand']['name'],
-                       description=item['short_description'],
-                       uom='Each')
-    session.add(product)
+# for item in data['results'][0]['items']:
+#     product = Products(product_number=item['mpn'],
+#                        name=item['brand']['name'],
+#                        description=item['short_description'],
+#                        uom='Each')
+#     session.add(product)
+#     session.commit()
+#     session.close()
+
+import fake_products
+
+for i in range(0, 10000):
+    fake = fake_products.FakeProduct()
+    data = Products(product_number=fake.part_number(),
+                    name=fake.name(),
+                    description=fake.description(),
+                    uom=fake.uom())
+    session.add(data)
     session.commit()
-    session.close()
+
+session.close()
