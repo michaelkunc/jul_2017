@@ -161,10 +161,12 @@ create or replace view current_product_costs as
 drop table if exists products_prices;
 
 create table products_prices (
+    price_id int not null auto_increment,
     price_list_id int references price_lists(price_list_id),
     product_id int references products(product_id),
     list_price decimal(6,2),
-    created_date timestamp default current_timestamp
+    created_date timestamp default current_timestamp,
+    primary key (price_id)
 );
 
 drop table if exists price_lists;
@@ -185,7 +187,7 @@ select pp.product_id, pp.list_price, pl.price_list_id
 from products_prices pp
 inner join price_lists pl
 on pp.price_list_id = pl.price_list_id
-where pl.price_list_id = true
+where pl.active = true
 ;
 
 
