@@ -24,7 +24,7 @@ class Product(object):
         nouns = ('Resistor', 'Potentiometer', 'Capacitor',
                  'Inductor', 'Oscillator', 'Relay', 'Transformer', 'Battery', 'Integrated Circuit',
                  'Display', 'Condenser', 'Reactor', 'Isolator', 'Control Knob', 'PWB', 'Diode',
-                 'Thermistor', 'CMOS', 'Timer', 'Comparator', 'Regulator', 'Aplifier', 'Cerebra', 'Cerebro')
+                 'Thermistor', 'CMOS', 'Timer', 'Comparator', 'Regulator', 'Amplifier', 'Cerebra', 'Cerebro')
 
         adjectives = ('Active', 'Arc', 'DC', 'Fused', 'Passive',
                       'Electromechanical', 'Constant Current', 'MOSFET', 'Incandescent',

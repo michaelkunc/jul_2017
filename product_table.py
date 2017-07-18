@@ -110,12 +110,12 @@ def populate_prices():
     print('product_costs table has been populated.')
 
 
-# populate_families()
-# populate_subfamilies()
-# populate_products(2000)
-# # calling prices 3 times to generate some historical data
-# populate_prices()
-# time.sleep(5)
-# populate_prices()
-# time.sleep(5)
-# populate_prices()
+populate_families()
+populate_subfamilies()
+populate_products(2000)
+# calling prices 3 times to generate some historical data
+populate_prices()
+time.sleep(5)
+populate_prices()
+time.sleep(5)
+populate_prices()
